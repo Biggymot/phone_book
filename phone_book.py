@@ -85,19 +85,15 @@ def avr_age_of_all_pensioners():
         total_age += entry.get("age")
     print total_age / len(pensioners)
 
-
 def print_all_students():
     number = 1
     for entry in phone_book:
         if isStudent(entry):
             print_entry(number, entry)
             number += 1
-
-
 def increase_age(nmbr_of_years):
     for entry in phone_book:
         entry["age"] = entry.get("age") + nmbr_of_years
-
 
 def update_name():
     for entry in phone_book:
@@ -107,7 +103,6 @@ def update_name():
     for entry in phone_book:
         if isPensioner(entry):
             entry["name"] = entry["name"] + ' - pensioner'
-
 
 def func(item):
     return item["age"]
