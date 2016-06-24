@@ -111,7 +111,6 @@ def sorted_by_age():
     phone_book = sorted(phone_book, key=func)
     print phone_book
 
-
 def isStudent(entry):
     return entry["age"] in range(17, 26)
 
